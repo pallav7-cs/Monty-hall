@@ -1,0 +1,56 @@
+.door-container{
+    display:grid;
+    gap:1px;
+    margin-top: 1em;
+}
+.door-0{
+    grid-column-start:1;
+    grid-column-end:2;
+   
+}
+
+.door-1{
+    grid-column-start:2;
+    grid-column-end:3;
+
+}
+
+.door-2{
+    grid-column-start:3;
+    grid-column-end:4;
+    
+}
+.door-0,.door-2,.door-1{
+ position:static;
+}
+
+
+img{
+    height:70%;
+    padding-left: 2em;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 5em;
+}
+
+#row1{
+    font-size: 2em;
+    text-align : center;
+}
+
+
+.footer{
+    margin-top: 3em;
+}
+
+.reasoning{
+    font-family: 'Courier Prime', monospace;
+    padding-top: 3em;
+}
+
+
+
+
