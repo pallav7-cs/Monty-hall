@@ -41,22 +41,37 @@
                 </div>
         </div>
             
-        <!-- <div class="results">
-            <div class="won">
-                Congratulations!you won
-            </div>
-            <div class="lost">
-                You lose
-            </div>
-             <div class="links">
-            <button><a href="index.html">Play again</a></button>
-            </div>
-        </div> -->
-   
- 
+         <div class="results">
+          
+
+        </div> 
+   <hr>
+ <div class="sim_mode">
+    <h2>Simulation Mode</h2>
+    <h3>Select whether to switch choice or not</h3>
+    <div class ="sim-choice">
+        <button id="sim-change">Change choice for each simulation</button>
+        <button id="sim-stay">keep choice for each simulation</button>
+        </div>
+    <h3>Select number of simulations</h3>    
+    <div class ="iterations">
+    <button class ="sim" id="sim-50"> 50 </button>
+    <button class ="sim" id="sim-100"> 100 </button>
+    <button class ="sim" id="sim-200"> 200 </button>
+    <button class ="sim" id="sim-500"> 500 </button>
+    </div>
+    
+    <p id="status">Running Simulation</p>
+    <center><canvas id="myChart" style="width:100%;max-width:700px"> </canvas></center>
+    <div id = "scores"></div>
+</div>
+
  <div class="footer">
     <a href="info.html" class="reasoning">The probabilistic reasoning behind the game</a>
  </div>
     <script src="script.js"></script>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 </body>
 </html>

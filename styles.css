@@ -28,6 +28,7 @@
 img{
     height:70%;
     padding-left: 2em;
+    width : 60%;
 }
 
 h1{
@@ -35,6 +36,16 @@ h1{
     text-align: center;
     font-size: 5em;
 }
+ h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+ }
+ h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1em;
+ }
 
 #row1{
     font-size: 2em;
@@ -49,6 +60,49 @@ h1{
 .reasoning{
     font-family: 'Courier Prime', monospace;
     padding-top: 3em;
+}
+
+.sim-choice{
+    margin-top:2em;
+    text-align: center;
+}
+.sim-choice{
+    margin-top:2em;
+    text-align: center;
+}
+
+.iterations{
+    margin-top:2em;
+    text-align: center;
+}
+
+.mychart{
+    margin-top:3em;
+}
+
+hr{
+	background-color: #fff;
+	border-top: 1em dotted #c9c1c1;
+    border-bottom: none;
+    border-left: none;
+    width : 20%;
+    
+}
+
+.sim_mode{
+    margin-top: 3em;
+}
+
+.sim-choice button{
+    background-color:blanchedalmond;
+    height: 3em;
+    margin-left: 1em;
+}
+
+.iterations button{
+    background-color:aqua;
+    height : 2em;
+    margin-left: 0.75em;
 }
 
 
