@@ -50,6 +50,7 @@ h1{
 #row1{
     font-size: 2em;
     text-align : center;
+    margin-top:3em;
 }
 
 
@@ -280,14 +281,21 @@ button:hover{
 }
 
 .row0{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: monospace;
     word-wrap: break-word;
     text-align:center;
     width: 50%;
     margin-left: 25%;
-    margin-bottom: 1.6em;
+    margin-bottom: 3em;
     line-height: 1.5em;
+    margin-top: 3em;
+}
+
+.row0 h2{
+  color:midnightblue;
+  font-size: 2em;
+  font-family: monospace
 }
 
 #scores{
