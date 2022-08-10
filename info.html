@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Bayes theorem and the game</title>
+</head>
+<body>
+
+        <h1>Mathematics Behind the game</h1>
+        <div class="para1">
+            It must have come to one's notice that the chances of winning a car became significantly higher when the choice was changed rather than 
+            keeping the same choice,but why is it so? The reason can be explained with conditional probability theorem.
+        </div>
+        <div class="para2">
+            <h2>
+                Conditional probability
+            </h2>
+           
+            <div class="theory">
+                Conditioned probability as the name suggests is probability conditioned according to an event,in other words it defines how the 
+                probability of an event occurring is defined provided that another event has already occurred.Let's take an example, on a given day 
+                what is the probability that there are clouds in the sky ? Practically speaking we can estimate the chances by taking into account 
+                the weather history of the area, the season ,whether there are clouds in the neighbouring areas or not. Mathematically there is no way
+                to provide an accurate probability of such event. Now let's say another event has been confirmed to occur,it is raining in the area , now 
+                certainly we can calculate probability of clouds being in the sky as 1 as it is not possible for rain to occur without clouds.
+                <p>
+                    <img src="Images/probab.png" >
+                </p>
+                Mathematically given an event B , probability of event A is calculated as probability of events A and B occurring together divided by the
+                probability of event B.
+            </div>
+            
+        </div>
+        <div class="para3">
+            <h2>
+                How does conditional probability work in this game?
+            </h2>
+            <p>
+                <img class="reference" src="Images/solution.png" >
+            </p>
+            To demonstrate how switching the choice maximises chances of victory we will calculate probability of winning in both cases whether we
+            switch our choice or not and compare the probability of winning in both the cases.
+        </div>
+          <div class="para4">
+            <div id="not-switched">
+                <h3>Not Switching</h3>
+                <p>P(Winning)=A*C + B*D <br>
+                    A = 1/3, B=2/3<br>
+                    C = 1(Car was selected and door not switched)<br>
+                    D = 0(Goat selected and door not switched)<br>
+                    <strong>Hence probability of winning  = 1/3 = 33.33%</strong>
+                </p>
+    
+               </div>
+                    
+               <div id="switched">
+                <h3>Switching</h3>
+                <p>P(Winning)=A*C + B*D <br>
+                    A = 1/3, B=2/3<br>
+                    C = 0(Car was selected and door switched)<br>
+                    D = 1(Goat selected and door switched)<br>
+                   <strong> Hence probability of winning  = 2/3 = 66.66%
+                    </strong>
+                    
+    
+                </p>
+               </div>
+          </div>
+            
+            
+            <div class = "para5">
+                <h4>This concludes how probability of winning increases when door is switched</h4>
+            </div>
+        
+
+    
+</body>
+</html>

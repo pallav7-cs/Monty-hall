@@ -1,7 +1,6 @@
 //hiding the unnecessary elements
 var user_choice=document.querySelector('.user_choice');
 user_choice.hidden=true;
-document.querySelector('#status').hidden = true;
 //generating random number to decide door of car;
 var car_pos = Math.floor((Math.random()*999)/333);
 //adding event listeners to the doors
@@ -10,7 +9,6 @@ var not_choice=0;
 for(let x=0;x<3;x++)
 {
     document.querySelectorAll('img')[x].addEventListener('click',function(e){
-        document.querySelector('.sim_mode').hidden = true;
         document.querySelector(".row1").hidden = true;
         user_choice.hidden=false;
         console.log(this.className);
@@ -117,8 +115,9 @@ for(let i=0;i<4;i++)
     document.querySelectorAll('.sim')[i].addEventListener('click', function()
     {
 
-        document.querySelector('#status').hidden = false;
-        document.querySelector('canvas').hidden = true;
+
+        document.querySelector('#loading').setAttribute('class','loading' );
+        document.querySelector('canvas').setAttribute('id'," ");
         let wins =0;let losses = 0;
         let times = parseInt(this.getAttribute('id').substring(4));
         setTimeout(function(){
@@ -151,8 +150,9 @@ for(let i=0;i<4;i++)
     
             }
         }
-        document.querySelector('#status').hidden = true;
+        document.querySelector('#loading').setAttribute('class',' ');
         //visualising the result
+        document.querySelector('canvas').setAttribute('id','myChart');
         var xValues = ["Wins","Losses"];
         var yValues = [wins,losses];
         var colors = ["green","red"];
@@ -168,7 +168,7 @@ for(let i=0;i<4;i++)
             },
 
           });
-          document.querySelector('canvas').hidden = false;
+         
 
 
           wins = (wins/(wins+losses))*100;
